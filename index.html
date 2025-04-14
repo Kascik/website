@@ -7,94 +7,221 @@
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
-    <div class="container">
-        <section id="header">
-            <div id="lewyheader" >
-                <a href="index.html"><img src="HEADLEFT.png" alt="zdjęcie"></a>
-                <a href="#">Primary</a>
-                <a href="#">Physical</a>
-                <a href="#">Cargo</a>
-                <a href="#">Excess</a>
-                <a href="#">Fleet Vantage</a>
-                <a href="#">About Us</a>
+    <section class="header">
+        <div class="lewyheader" >
+            <a href="index.html"><img src="HEADLEFT.png" alt="zdjęcie"></a>
+            <a href="primary liability.html">Primary</a>
+            <a href="physical damage.html">Physical</a>
+            <a href="cargo Insurance.html">Cargo</a>
+            <a href="excess liability.html">Excess</a>
+            <a href="fleet.html">Fleet Vantage</a>
+            <a href="aboutus.html">About Us</a>
+        </div>
+        <div class="prawyheader"><img src="HEADRIGHT.png" alt="zdjęcie"></div>
+    </section>
+    <section class="mid1">
+        <div class="lewymid1"><h1>We make sure the insurence you need, is the insurance you get.</h1><br>
+          <h5 style="margin-top: 24px;margin-bottom: 40px;">Degree Nine is the place to jump start your insurance</h5>
+          <div class="button-group">
+              <a href="#" class="btn-primary">
+                Request Quote <span class="arrow">→</span>
+              </a>
+              <a href="#" class="btn-link">
+                Contact Us <span class="arrow">→</span>
+              </a>
+          </div>
+        </div>
+        <div class="prawymid1"><img src="Auto.png" alt="zdjęcie"></div>
+    </section>
+    <section class="mid2">
+        <h4 >Trusted by 45M+ users</h4>
+        <img src="współpraca.png" alt="nasi współpracownicy" >
+    </section>
+    <section class="planer">
+        <img src="type insurence.png" alt="insurence types" >
+        <h1>Searching for specific insurance?</h1>
+        <h2>Check if we got you covered!</h2>
+        <div class="plans">
+            <div class="plan">
+              <h3>Basic</h3>
+              <p>Essential coverage for individuals and small businesses, including property and liability protection at an affordable price. Simple, reliable, and budget-friendly.</p>
             </div>
-            <div id="prawyheader"><img src="HEADRIGHT.png" alt="zdjęcie"></div>
-        </section>
-        <section id="mid1">
-            <div id="lewymid1"><h1>We make sure the insurence you need, is the insurance you get.</h1><br>
-            <h5 style="margin-top: 24px;margin-bottom: 40px;">Degree Nine is the place to jump start your insurance</h5>
-                <a href="#" style="border-radius: 10px; padding: 16px 32px; color: rgb(255, 255, 255); text-decoration: none; background-color: #216683; margin-top: 477px;">Request Quote&#8594;</a>
-                <a href="#" style="border-radius: 10px; padding: 12px; color: rgb(0, 0, 0); text-decoration: none; margin-top: 481px;">Contact Us &#8594;</a>
+      
+            <div class="plan">
+              <h3>Standard</h3>
+              <p>Expanded coverage with higher liability limits and added protection for unforeseen risks. Ideal for growing businesses and those seeking extra security.</p>
             </div>
-            <div id="prawymid1"><img src="Auto.png" alt="zdjęcie"></div>
-        </section>
-        <section id="mid2">
-            <h4 >Trusted by 45M+ users</h4>
-            <img src="współpraca.png" alt="nasi współpracownicy" >
-        </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section class="cta-section">
-            <img src="facet 1.png" alt="Man standing with arms crossed" />
-            <div class="cta-text">
-              <small>↷ Save and be safe</small>
-              <h2>Looking to save 20% and enhance your fleet’s safety? With Degree Nine, you’re in expert hands-backed by years of Commercial Trucking experience.</h2>
-              <div class="cta-buttons">
-                <button class="btn-outline">Get in Touch →</button>
-                <button class="btn-black">Get appointed →</button>
-              </div>
+      
+            <div class="plan">
+              <h3>Professional</h3>
+              <p>Comprehensive, customized coverage with priority claims, risk management, and extended protection. Perfect for professionals and larger businesses.</p>
             </div>
-        </section>
+        </div>
+    </section >
+    <section id="insurance-switcher">
+
+      <!-- KATEGORIE -->
+      <div id="tabs">
+        <button onclick="showTab('primary')" class="active">Primary Liability</button>
+        <button onclick="showTab('physical')">Physical Damage</button>
+        <button onclick="showTab('cargo')">Cargo</button>
+        <button onclick="showTab('excess')">Excess Liability</button>
+        <button onclick="showTab('fleet')">Fleet Vehicle</button>
+      </div>
+    
+      <!-- TREŚĆ -->
+      <div id="tab-content">
+        <div id="primary" class="tab-pane flex">
+          <div>
+            <h3>Primary Liability</h3>
+            <ul>
+              <li>Legal coverage for accidents and third-party injury.</li>
+              <li>Compliance with federal regulations.</li>
+              <li>Customizable policies and flexible limits.</li>
+            </ul>
+          </div>
+          <img src="2autamini.png" alt="Insurance example">
+        </div>
+    
+        <div id="physical" class="tab-pane flex" style="display: none;">
+          <div>
+            <h3>Physical Damage</h3>
+            <ul>
+              <li>Protects vehicle against collision, theft, fire, and vandalism.</li>
+              <li>Coverage for repair and replacement costs.</li>
+            </ul>
+          </div>
+          <img src="środekautamini.png" alt="Insurance example">
+        </div>
+    
+        <div id="cargo" class="tab-pane flex" style="display: none;">
+          <div>
+            <h3>Cargo Insurance</h3>
+            <ul>
+              <li>Coverage for damaged or stolen goods in transit.</li>
+              <li>Essential for logistics and freight companies.</li>
+            </ul>
+          </div>
+          <img src="kontenerymini.png" alt="Insurance example">
+        </div>
+    
+        <div id="excess" class="tab-pane flex" style="display: none;">
+          <div>
+            <h3>Excess Liability</h3>
+            <ul>
+              <li>Extra protection above standard liability policies.</li>
+              <li>Minimizes business financial risks.</li>
+            </ul>
+          </div>
+          <img src="2tirymini.png" alt="Insurance example">
+        </div>
+    
+        <div id="fleet" class="tab-pane flex" style="display: none;">
+          <div>
+            <h3>Fleet Vehicle</h3>
+            <ul>
+              <li>Protects multiple vehicles under one policy.</li>
+              <li>Designed for commercial fleet operations.</li>
+            </ul>
+          </div>
+          <img src="tirmini.png" alt="Insurance example">
+        </div>
+      </div>
+    </section>
+    
+    <!-- SKRYPT -->
+    <script>
+      function showTab(tabId) {
+        const tabs = document.querySelectorAll('.tab-pane');
+        const buttons = document.querySelectorAll('#tabs button');
+    
+        tabs.forEach(tab => tab.style.display = 'none');
+        document.getElementById(tabId).style.display = 'flex';
+    
+        buttons.forEach(btn => {
+          const match = btn.textContent.replace(/\s/g, '').toLowerCase().includes(tabId);
+          btn.classList.toggle('active', match);
+        });
+      }
+    </script>
+    
+    
+    <section class="statystyki">
+        <h2 style="text-align: center;">Why to choose Degree Nine over others?</h2>
+        <p style="text-align: center;">Contact Sales to request a demo</p>
+        <ul>
+            <li><p class="oversize">1B+</p> Miles Driven & Recorded</li>
+            <li><p class="oversize">95%</p> Claim Satisfaction</li>
+            <li><p class="oversize">34</p> Filed Claims & Resolved</li>
+            <li><p class="oversize">5784</p> Client Satisfaction</li>
+        </ul><ul>
+            <li><p class="oversize">11</p> Service Offices</li>
+            <li><p class="oversize">100%</p> Policy Guarantee</li>
+            <li><p class="oversize">99k</p> Miles Driven / mo</li>
+            <li><p class="oversize">$54M</p> Customer Protection</li>
+        </ul>
+    </section>
+    <section class="stories">
+    <H1 style="color: blue;">Customer Stories</H1>
+        <img src="stories1.png" alt="historie">
+    <img src="stories2.png" alt=""><img src="stories3.png" alt=""></section>
+    <section class="cta-section" >
+        <img src="facet 1.png" alt="Man standing with arms crossed" />
+        <div class="cta-text">
+            <small>↷ Save and be safe</small>
+            <h2>Looking to save 20% and enhance your fleet’s safety? With Degree Nine, you’re in expert hands-backed by years of Commercial Trucking experience.</h2>
+            <div class="cta-buttons">
+            <button class="btn-outline">Get in Touch →</button>
+            <button class="btn-black">Get appointed →</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer style="background-color: white">
+        <div class="footer-logo">
+            <img src="footer.png" alt="Degree Nine Logo" />
+        </div>
+        <div class="footer" style="background-color: white;">
+            
         
-        <footer>
-            <div class="footer">
-              <div class="footer-logo">
-                <img src="footer.png" alt="Degree Nine Logo" />
-              </div>
-        
-              <div class="footer-section">
+            <div class="footer-section">
                 <h4>Sitemap</h4>
                 <ul>
-                  <li><a href="#">Homepage</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Products</a></li>
-                  <li><a href="#">Fleet Vantage</a></li>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="fleet.html">Fleet Vantage</a></li>
                 </ul>
-              </div>
-        
-              <div class="footer-section">
-                <h4>Products</h4>
-                <ul>
-                  <li><a href="#">Primary Liability</a></li>
-                  <li><a href="#">Physical Damage</a></li>
-                  <li><a href="#">Cargo Insurance</a></li>
-                  <li><a href="#">Occupational Accident</a></li>
-                  <li><a href="#">Excess Liability</a></li>
-                </ul>
-              </div>
-        
-              <div class="footer-section">
-                <h4>Contact</h4>
-                <ul>
-                  <li>1-800-555-1212</li>
-                  <li><a href="mailto:contact@degreenine.com">contact@degreenine.com</a></li>
-                </ul>
-              </div>
             </div>
         
-            <div class="footer-bottom">
-              <div>©2024 Degree Nine. All rights reserved. Degree Nine, the D9 Logo, are trademarks of Degree Nine</div>
-              <div class="links">
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                <li><a href="primary liability.html">Primary Liability</a></li>
+                <li><a href="physical damage.html">Physical Damage</a></li>
+                <li><a href="cargo Insurance.html">Cargo Insurance</a></li>
+                <li><a href="#">Occupational Accident</a></li>
+                <li><a href="excess liability.html">Excess Liability</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                <li>1-800-555-1212</li>
+                <li><a href="mailto:contact@degreenine.com">contact@degreenine.com</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div class="footer-section">
+            <div>©2024 Degree Nine. All rights reserved. Degree Nine, the D9 Logo, are trademarks of Degree Nine</div>
+            <div class="links">
                 <span>♿ Accessibility</span>
                 <span>🔒 Privacy Policy</span>
                 <span>📄 Terms and Conditions</span>
-              </div>
             </div>
-        </footer>
-        
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
