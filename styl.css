@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -59,7 +59,6 @@ h4, h5 {
     line-height: 80px;
     font-weight: bold;
 }
-
 .header, .footer {
     padding: 60px 40px;
     margin: 0 auto;
@@ -77,14 +76,31 @@ h4, h5 {
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
+    overflow: hidden;
 }
+.header img {
+    height: 40px;
+    object-fit: contain;
+}
+
 
 .lewyheader, .prawyheader {
     margin: 0 20px;
     display: flex;
     align-items: center;
 }
-
+.lewyheader img {
+    height: 40px;
+    max-height: 40px;
+    object-fit: contain;
+  }
+  
+.prawyheader img {
+    height: 40px;
+    max-height: 40px;
+    object-fit: contain;
+  }
+  
 .lewyheader a {
     border-radius: 20px;
     padding: 6px 20px;
@@ -97,6 +113,7 @@ h4, h5 {
     color: white;
     margin-right: 6px;
 }
+
 .tekst{
     margin-top: 10px;
     width: 793px;
@@ -202,6 +219,44 @@ h4, h5 {
     font-weight: lighter;
     text-decoration: none;
 }
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+  }
+
+  .benefits-list li {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px 25px;
+    transition: transform 0.2s ease;
+  }
+
+
+  .benefits-list li h3 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .benefits-list li p {
+    margin-left: 20px;
+    color: #666;
+  }
+  ul.vehicle-list {
+    list-style-type: disc; /* kropki */
+    padding-left: 20px; /* odstęp na kropki */
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+  }
+
+  ul.vehicle-list li {
+    background: none;
+    padding: 5px 0;
+    color: #333;
+  }
+
 .komentarze {
     margin: 185px 150px 152px 150px;
   }
@@ -305,6 +360,10 @@ h4, h5 {
     width: 100%;
     margin: 0 auto;
     max-width: 1200px;
+}
+.stories img{
+    margin-left: 70px;
+    margin-top: 20px;
 }
 
 .work {
@@ -446,6 +505,25 @@ footer {
 .dane_wejsciowe{
     background-color: #f6f6f6;
 }
+.biznes {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+  }
+
+  .biznes img {
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .biznes div {
+    flex: 1;
+    color: #333;
+  }
 
 .footer {
     background: #f4f4f4;
